@@ -81,7 +81,7 @@ div > a:hover {
 
   height: 70%;
   margin: 0 10% 0 10%;
-  border: 2px solid red;
+  
   display: flex;
 }
 .cart-slect {
@@ -160,7 +160,7 @@ div > a:hover {
 .dropbtn {
   border: 2px solid #4caf50;
   color: #000;
-  padding: 8px;
+  padding: 4px;
   font-size: 12px;
   cursor: pointer;
   border-radius: 12px;
@@ -174,20 +174,24 @@ div > a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
+  border: 0.8px solid #4caf50;
   right: 0;
   background-color: #f9f9f9;
   min-width: 100px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.17);
   z-index: 1;
 }
 .dropdown-content a {
   color: black;
   text-decoration: none;
-  display: block;
+  display: block; 
+ 
 }
 .dropdown-content a:hover {
+  transition: 0.6s;
   background-color: #f1f1f1;
   color: #000;
+  border: 0.8px solid #4caf50;
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -201,4 +205,59 @@ div > a:hover {
   height: 70%;
   width: 50%;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.19), 0px 2px 2px rgba(0, 0, 0, 0.23);
+}
+.item_submit > h4 {
+  color: #000;
+  text-shadow: 0 2px 4px silver;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+.total_pay {
+  display: flex;
+  justify-content: space-between;
+}
+.total_pay > h3 {
+  color: #4caf50;
+}
+.total_pay > h4 {
+  color: #000;
+}
+.inputSub {
+  text-align: center;
+}
+.inputSub > * {
+  background-color: #4caf50;
+  border-radius: 24px;
+  width: 260px;
+  border: none;
+  color: #000;
+}
+.inputSub > *:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  color: white;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.19), 0px 2px 2px rgba(0, 0, 0, 0.23);
+}
+.input_1 {
+ border:1px solid #4caf50;
+ border-radius: 8px;
+}
+.submit_1 {
+  border: 1px solid #4caf50;
+  border-radius: 24px;
+  width: 80px;
+  background-color: #fff;
+}
+.submit_1:hover {
+  color: #4caf50;
+  text-shadow: 0px 2px 2px silver;
+  transition: 0.4s;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.19), 0px 2px 2px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+}
+.promotion > i:hover {
+  color: #4caf50;
+  cursor: pointer;
 }
